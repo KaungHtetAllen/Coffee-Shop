@@ -171,13 +171,13 @@ header{
     object-fit: cover;
     height: 600px;
     opacity: 0.95;
-    
+    object-position: top;
 }
 
 
 .img-container .cover-text{
     position: absolute;
-    top:260px;
+    top:200px;
     left: 150px;
 }
 
@@ -263,3 +263,98 @@ header{
 }
 
 /* category logo section end */
+/* coffee list section start */
+
+.coffee-list{
+    margin-bottom: 20px;
+}
+
+.coffee-container{
+    margin:0 100px;
+    padding: 30px 80px;
+    background-color: var(--text-color);
+    color: black;
+    border-radius: 20px;
+    
+}
+
+.coffee-container .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coffee-container h3{
+    margin-left:10px;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.coffee-container .card-container{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 2rem;
+    margin:50px;
+
+}
+
+.coffee-container .card{
+    background-color: var(--bg-color);
+    padding: 20px 20px;
+    width:100%;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+.coffee-container .card img{
+    width:100%;
+    height:300px;
+    border-radius: 10px;
+}
+
+
+.coffee-container .card h5{
+    font-size: 1.2rem;
+    margin: 5px;
+    font-weight: bold;
+}
+
+.coffee-container .card p{
+    font-size: 15px;
+    margin: 5px;
+}
+
+.coffee-container .card .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.coffee-container .card span{
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.coffee-container .card .row span i{
+    margin-right: 5px;
+}
+
+.coffee-container .card input{
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border: none;
+    transition: 0.5s;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+.coffee-container .card input:hover{
+    filter: brightness(1.2);
+    transform: scale(1.2);
+}
+/* coffee lists section end */
