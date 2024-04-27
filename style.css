@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Charmonman:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -219,13 +221,6 @@ header{
 
 /* category logo section start */
 
-
-  @keyframes bounce {
-      0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-      40% {transform: translateY(-30px);}
-      60% {transform: translateY(-15px);}
-  }
-  
 .category{
     background-color:var(--bg-color);
 
@@ -249,12 +244,11 @@ header{
     background-color:var(--bg-color);
     color:black;
     cursor: pointer;
+    transition: 0.5s;
 }
 
 .category .category-logo img:hover{
-    animation: linear;
-    animation-name: bounce;
-    animation-duration: 1s;
+    transform: translateY(-10%);
 }
 
 .category .category-logo .icon h4{
@@ -293,7 +287,7 @@ header{
 
 .coffee-container .card-container{
     display: grid;
-    grid-template-columns: auto auto auto auto;
+    grid-template-columns: repeat(auto-fit,minmax(200px,auto));
     gap: 2rem;
     margin:50px;
 
@@ -303,14 +297,21 @@ header{
     background-color: var(--bg-color);
     padding: 20px 20px;
     width:100%;
+    height: 430px;
     border-radius: 10px;
     position: relative;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.coffee-container .card:hover{
+    transform: translateY(-5%);
 }
 
 .coffee-container .card img{
     width:100%;
-    height:300px;
+    height:250px;
     border-radius: 10px;
 }
 
@@ -358,3 +359,184 @@ header{
     transform: scale(1.2);
 }
 /* coffee lists section end */
+
+
+/* coffee bean section start */
+
+.coffeebean-container{
+    margin: 0 100px;
+    height:300px;
+    position: relative;
+}
+
+.coffeebean-container img{
+    width:100%;
+    height:100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+
+.coffeebean-container .text-group{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:50%;
+    left:33%
+}
+
+.coffeebean-container .text-group h3{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+.coffeebean-container .text-group button{
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: var(--text-color);
+    background-color: var(--btn-color);
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.coffeebean-container .text-group button:hover{
+    transform: scale(1.2);
+}
+
+.coffeebean-container .text-group button i{
+    font-size: 0.5rem;
+    margin-left: 3px;
+}
+
+
+/* coffee bean section end */
+
+/* Review Section Start */
+
+.review-container{
+    background: white;
+    margin: 20px 100px;
+    color: black;
+    padding: 40px 80px;
+    
+}
+
+.review-container h5{
+    text-align: center;
+    font-family: "Charmonman", cursive;
+    font-size: 1.2rem;
+}
+
+.review-container h4{
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+}
+
+.review-container .box-container{
+    margin-top: 50px;
+    padding: 50px 75px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
+    gap: 25px;
+}
+
+.review-container .box-container .box{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    background-color: rgb(242, 242, 242);
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius:10px;
+}
+
+.review-container .box-container .box:hover{
+    transform: translateY(-10%);
+
+}
+
+.review-container .box-container .box .heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review-container .box-container .box .heading .gp1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.review-container .box-container .box .heading .gp1  .img{
+    width:60px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.review-container .box-container .box .heading .gp1  img{
+    width:100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position:top;
+}
+
+.review-container .box-container .box .heading .gp1 .text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.review-container .box-container .box .heading .gp1 .text h3{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.review-container .box-container .box .heading .gp1 .text h4{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.review-container .box-container .box .heading .gp2{
+    margin-top: 10px;
+}
+
+.review-container .box-container .box .heading .gp2 i{
+    color: orange;
+    font-size: 0.8rem;
+}
+
+.review-container .box-container .box .body{
+    margin-top:20px
+}
+
+.review-container .box-container .box .body p{
+    font-size: 0.9rem;
+}
+
+.review-container  .extra{
+    margin-top: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
+    width: 100%;
+}
+
+
+.review-container  .extra i{
+    margin:5px;
+    font-size: 0.7rem;
+}
+
+
+/* Review Section End */
