@@ -540,3 +540,90 @@ header{
 
 
 /* Review Section End */
+
+/* Contact Section Start */
+
+.contact-container{
+    background-color: red;
+    margin: 0 100px;
+    position: relative;
+}
+
+.contact-container .img{
+    width:100%;
+    height:400px;
+}
+
+.contact-container .img img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contact-container .form{
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.contact-container .text{
+    text-align: center;
+    /* background-color: red; */
+    padding: 0 150px;
+}
+
+.contact-container .text h2{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.contact-container .text h3{
+    font-size: 0.8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+
+.contact-container form {
+    /* background-color: yellow; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-container form  .email{
+    width:50%;
+    height: 30px;
+    padding: 20px 40px;
+    border-radius: 20px;
+    margin-right: 15px;
+    border: none;
+}
+
+.contact-container form .btn {
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: var(--btn-color);
+    color: var(--text-color);
+    border: none;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.contact-container form .btn:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+.contact-container i{
+    color: black;
+    margin-right: -35px;
+    z-index: 2;
+    margin-left: 30px;
+}
+
+
+/* Contact Section End */
