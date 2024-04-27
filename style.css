@@ -545,13 +545,13 @@ header{
 
 .contact-container{
     background-color: red;
-    margin: 0 100px;
+    margin: 20px 100px;
     position: relative;
 }
 
 .contact-container .img{
     width:100%;
-    height:400px;
+    height:350px;
 }
 
 .contact-container .img img{
@@ -559,6 +559,8 @@ header{
     height: 100%;
     object-fit: cover;
     object-position: center;
+    
+    filter: brightness(0.8);
 }
 
 .contact-container .form{
@@ -569,6 +571,7 @@ header{
 
 .contact-container .text{
     text-align: center;
+    color: var(--text-color);
     /* background-color: red; */
     padding: 0 150px;
 }
@@ -627,3 +630,50 @@ header{
 
 
 /* Contact Section End */
+
+/* Footer Section Start */
+
+.footer-container{
+    background-color: var(--main-color);
+    margin: 0 100px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding: 40px 80px;
+}
+
+.footer-container .tag{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.footer-container .tag h2{
+    font-weight: 500;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.footer-container .tag h3{
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.footer-container .tag h4{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.footer-container .tag .logo{
+
+}
+
+.footer-container .tag .logo i{
+    font-size: 1.2rem;
+    margin-right: 15px;
+}
+
+/* Footer Section End */
