@@ -38,7 +38,6 @@ header{
     align-items: center;
     padding: 20px 30px;
     background-color: var(--main-color);
-    
 }
 
 .logo{
@@ -46,7 +45,6 @@ header{
     justify-content: center;
     align-items: center;
     /* background-color: red; */
-    /* padding: 20px; */
 }
 
 @keyframes hithere {
@@ -119,7 +117,6 @@ header{
     bottom:-3px;
     left:0;
     transition: 0.5s;
-
 }
 
 .navbar .tag a:hover::after{
@@ -163,30 +160,13 @@ header{
     align-items: center;
 }
 
-/* .img-container .cover{
-    background-color: blue;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.img-container .cover img{
-    width: 100%;
-    object-fit: cover;
-    height: 600px;
-    opacity: 0.95;
-    object-position: top;
-} */
-
-
 .img-container .cover-text{
     width: 100%;
     height: 600px;
     background: url(./image/cover.jpg);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover; 
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,7 +181,6 @@ header{
     color: var(--main-color);
     font-weight: 800;
     text-shadow: 5px 5px 5px var(--main-color);
-
 }
 
 .img-container .cover-text h3{
@@ -224,14 +203,12 @@ header{
     transition: 0.5s;
 }
 
-
 .img-container .cover-text button:hover{
     filter: brightness(1.1);
     transform: scale(1.2);
     cursor: pointer;
 }
 /* Cover Image Section End */
-
 
 /* category logo section start */
 
@@ -252,9 +229,6 @@ header{
     align-items:center;
 }
 
-
-
-
 .category .category-logo img{
     width: 100px;
     height:100px;
@@ -263,8 +237,6 @@ header{
     cursor: pointer;
     transition: 0.5s;
 }
-
-
 
 .category .category-logo .icon h4{
     color: var(--main-color);
@@ -277,23 +249,19 @@ header{
 }
 
 /* category logo section end */
+
 /* coffee list section start */
 
 .coffee-list{
-    /* margin-top: 20px; */
+    margin-bottom: 20px;
 }
 
 .coffee-container{
-    /* margin:0 100px; */
+    margin:0 100px;
     padding: 30px 80px;
     background-color: var(--text-color);
     color: black;
-    /* border-radius: 20px; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; */
-    
+    border-radius: 20px;
 }
 
 .coffee-container .title{
@@ -336,10 +304,9 @@ header{
 
 .coffee-container .card img{
     width:100%;
-    height: 250px;
+    height: 300px;
     border-radius: 10px;
 }
-
 
 .coffee-container .card h5{
     font-size: 1.2rem;
@@ -356,7 +323,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    margin-top: 30px;
 }
 
 .coffee-container .card span{
@@ -385,22 +352,11 @@ header{
 }
 /* coffee lists section end */
 
-
 /* coffee bean section start */
 
 .coffeebean-container{
-    /* margin: 0 100px; */
-    /* height:300px; */
-    /* position: relative; */
+    margin: 0 100px;
 }
-
-/* .coffeebean-container img{
-    width:100%;
-    height:100%;
-    object-position: center;
-    object-fit: cover;
-} */
-
 
 .coffeebean-container .text-group{
     width: 100%;
@@ -410,14 +366,11 @@ header{
     justify-content: center;
     align-items: center;
     background: url(./image/Coffee\ Beans\ Phone\ Wallpaper.jpg);
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
     padding-bottom: 50px 0;
     text-wrap: nowrap;
-    /* position: absolute;
-    top:50%;
-    left:33% */
 }
 
 .coffeebean-container .text-group h3{
@@ -425,7 +378,6 @@ header{
     font-weight: 700;
     margin-bottom: 20px;
 }
-
 
 .coffeebean-container .text-group button{
     padding: 10px 20px;
@@ -439,8 +391,6 @@ header{
     font-size: 1.3rem;
 }
 
-
-
 .coffeebean-container .text-group button i{
     font-size: 1rem;
 }
@@ -449,15 +399,13 @@ header{
     transform: scale(1.2);
 }
 
-
 /* coffee bean section end */
 
 /* Review Section Start */
 
-
 .review-container{
-    background: white;
-    /* margin: 20px 100px; */
+    background: var(--text-color);
+    margin: 20px 100px;
     color: black;
     padding: 40px 80px;
     display: flex;
@@ -489,13 +437,12 @@ header{
 .review-container .box-container .box{
     display: flex;
     flex-direction: column;
-    padding: 10px 20px;
+    padding: 20px;
     background-color: rgb(242, 242, 242);
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
     cursor: pointer;
     transition: 0.5s;
     border-radius:10px;
-    /* max-width: 500px; */
 }
 
 .review-container .box-container .box:hover{
@@ -526,7 +473,7 @@ header{
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
-    object-position:top;
+    object-position:center;
 }
 
 .review-container .box-container .box .heading .gp1 .text{
@@ -572,12 +519,10 @@ header{
     width: 100%;
 }
 
-
 .review-container  .extra i{
     margin:5px;
     font-size: 0.7rem;
 }
-
 
 /* Review Section End */
 
@@ -585,23 +530,8 @@ header{
 
 .contact-container{
     /* background-color: red; */
-    /* margin: 20px 100px; */
-    /* position: relative; */
+    margin: 20px 100px;
 }
-
-/* .contact-container .img{
-    width:100%;
-    height:350px;
-}
-
-.contact-container .img img{
-    width:100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    
-    filter: brightness(0.8);
-} */
 
 .contact-container .form{
     background: url(./image/Download\ free\ image\ of\ Various\ coffee\ mugs\ on\ an\ abstract\ textured\ wallpaper\ by\ nook\ about\ coffee\ iphone\ wallpaper\,\ instagram\ coffee\,\ aesthetic\,\ android\ wallpaper\,\ and\ aromatic\ 2448252.jpg);
@@ -616,9 +546,6 @@ header{
     align-items: center;
     padding: 50px 0;
     text-wrap: nowrap;
-    /* position: absolute;
-    top: 35%;
-    left: 25%; */
 }
 
 .contact-container .text{
@@ -682,7 +609,6 @@ header{
     margin-left: 30px;
 }
 
-
 /* Contact Section End */
 
 /* Footer Section Start */
@@ -691,8 +617,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* margin: 0 100px; */
-
+    margin: 0 100px;
 }
 
 .tag-container{
@@ -729,9 +654,6 @@ header{
     font-size: 1rem;
 }
 
-.tag-container .tag .logo{
-
-}
 
 .tag-container .tag .logo i{
     font-size: 1.2rem;
@@ -740,45 +662,70 @@ header{
 
 /* Footer Section End */
 
-
 /* Responsive Section Start */
 
 @media (max-width:1080px) {
-    
+    /* navbar section */
     .navbar .tag li{
         font-size: 1.3rem;
     }
 
+    /* cover image section */
     .img-container .cover-text{
         height: 700px;
-        
         padding-left: 5%;
         padding-top: 10%;
     }
 
-    .tag-container .tag h2{
+    /* category section */
+    .category .category-logo .icon h4{
+        font-size: 1.3rem;
+    }
+
+    /* coffee lists section */
+    .coffee-container{
+        padding: 30px 40px;
+    }
+
+    .coffee-container .card-container{
+        display: grid;
+        grid-template-columns:auto auto auto;
+        gap: 2rem;
+        margin:50px;
+    }
+
+    .coffee-container .card{
+        padding: 20px 20px;
+        width:100%;
+    }
+
+    .coffee-container .card:hover{
+        transform: translateY(-5%);
+    }
+
+    .coffee-container .card img{
+        width:100%;
+        height:250px;
+    }
+
+    .coffee-container .card h5{
         font-size: 1.5rem;
     }
 
-    .tag-container .tag h3{
-        font-size: 1.2rem;
+    .coffee-container .card p{
+        font-size: 15px;
     }
 
-    .tag-container .tag .logo i{
+    .coffee-container .card span{
+        font-size: 1.3rem;
+    }
+
+    .coffee-container .card input{
+        padding: 8px 16px;
         font-size: 1rem;
-        margin-right: 15px;
     }
 
-    .tag-container{
-        padding:  20px;
-    }
-
-    /* .contact-container form .btn {
-        padding: 10px 20px;
-        border-radius: 20px;
-        font-size: 1rem;
-    } */
-
+    /* contact section */
     .contact-container .form{
         height: 400px;
     }
@@ -796,7 +743,6 @@ header{
         height: 50px;
         padding: 15px 30px;
         font-size: 1rem;
-        
     }
 
     .contact-container form .btn {
@@ -805,185 +751,51 @@ header{
         font-size: 1.3rem;
     }
 
-    .category .category-logo .icon h4{
-        font-size: 1.3rem;
-    }
-
-    .coffee-container{
-        /* margin:0 100px; */
-        padding: 30px 40px;
-        /* background-color: var(--text-color);
-        color: black;
-        border-radius: 20px; */
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; */
-    
-    }
-
-    .coffee-container .card-container{
-        display: grid;
-        grid-template-columns:auto auto auto;
-        gap: 2rem;
-        margin:50px;
-
-    }
-
-    .coffee-container .card{
-        padding: 20px 20px;
-        width:100%;
-    }
-
-    .coffee-container .card:hover{
-        transform: translateY(-5%);
-    }
-
-    .coffee-container .card img{
-        width:100%;
-        height:250px;
-    }
-
-
-    .coffee-container .card h5{
+    /* footer section */
+    .tag-container .tag h2{
         font-size: 1.5rem;
     }
 
-    .coffee-container .card p{
-        font-size: 15px;
+    .tag-container .tag h3{
+        font-size: 1.2rem;
     }
 
-    /* .coffee-container .card .row{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin: 10px;
-    } */
-
-    .coffee-container .card span{
-        font-size: 1.3rem;
-    }
-
-    /* .coffee-container .card .row span i{
-        margin-right: 5px;
-    } */
-
-    .coffee-container .card input{
-        padding: 8px 16px;
+    .tag-container .tag .logo i{
         font-size: 1rem;
+        margin-right: 15px;
+    }
+
+    .tag-container{
+        padding:  20px;
     }
     
 }
 
 @media (max-width:786px) {
-    /* .navbar .tag li{
-        font-size: 1.3rem;
-    } */
-
-    .tag-container .tag:nth-child(2), .tag-container .tag:nth-child(3), .tag-container .tag:nth-child(4), .tag-container .tag:nth-child(5){
-        display: none;
-    }
-
-    .tag-container .tag h2{
-        text-align: center;
-        font-size: 2.5rem;
-        margin-bottom: 10px;
-    }
-
-    .tag-container .tag h3{
-        align-self: center;
+    /* cover image section */
+    .img-container .cover-text button{
+        padding:15px 30px;
+        margin-top: 20px;
         font-size: 1.5rem;
     }
 
-    .tag-container .tag .logo{
-        /* background-color: red; */
-    }
-
-    .tag-container .tag .logo i{
-        font-size: 1.5rem;
-        margin: 10px 10px;
-    }
-
-
-    .contact-container .text h2{
-        font-size: 1.8rem;
-    }
-    .contact-container .text h3{
-        font-size: 1rem;
-    }
-
-
-    .contact-container form {
-        /* background-color: yellow; */
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* height:800px;
-        padding: 50px 0; */
-    }
-
-
-
-    .contact-container .text h2{
-        font-size: 2rem;
-    }
-
-    .contact-container .text h3{
-        font-size: 1.5rem;
-    }
-
-    .contact-container form  .email{
-        width:400px;
-        height: 60px;
-        padding: 20px 40px;
-        margin-bottom: 20px;
-        font-size: 1.5rem;
-        
-    }
-
-    .contact-container form .btn {
-        padding: 15px 30px;
-        border-radius: 20px;
-        font-size: 1.5rem;
-    }
-    /* .contact-container form  .email{
-        width:300px;
-        height: 50px;
-        padding: 20px 40px;
-        margin-bottom: 20px;
-        font-size: 1rem;
-        
-    }
-
-    .contact-container form .btn {
-        padding: 15px 30px;
-        border-radius: 20px;
-        font-size: 1rem;
-    } */
-
-    .coffeebean-container .text-group{
-        min-height:500px;
-    }
-
+    /* category section */
     .category .category-logo img{
         width: 100px;
         height:100px;
     }
 
-
-
     .category .category-logo .icon h4{
         font-size: 1.5rem;
     }
-    
+
+    /* coffee list section */
     .coffee-container .card-container{
         grid-template-columns: auto auto;
         gap: 5rem;
         margin:50px;
         padding: 0 50px;
     }
-
 
     .coffee-container .card h5{
         font-size: 1.8rem;
@@ -992,7 +804,6 @@ header{
     .coffee-container .card p{
         font-size: 20px;
     }
-
 
     .coffee-container .card span{
         font-size: 1.5rem;
@@ -1011,29 +822,26 @@ header{
         font-size: 2rem;
     }
 
-
-    .coffee-container .card img{
-        height: 400px;
+     /* coffee bean section */
+     .coffeebean-container .text-group{
+        min-height:500px;
     }
 
-     .coffeebean-container .text-group h3{ 
+    .coffeebean-container .text-group h3{ 
         font-size: 3rem;
         margin-bottom: 20px;
     }
-
 
     .coffeebean-container .text-group button{
         padding: 20px 40px;
         font-size: 1.5rem;
     } 
 
-
-
     .coffeebean-container .text-group button i{
         font-size: 1rem;
     } 
-    
 
+    /* review section */
     .review-container .box-container .box .heading .gp1 .text h3{
         font-size: 1.3rem;
     }
@@ -1051,16 +859,71 @@ header{
         color: orange;
         font-size: 1rem;
     }
+    
+    /* contact section */
+    .contact-container .text h2{
+        font-size: 1.8rem;
+    }
 
-    .img-container .cover-text button{
-        padding:15px 30px;
-        margin-top: 20px;
+    .contact-container .text h3{
+        font-size: 1rem;
+    }
+
+    .contact-container form {
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact-container .text h2{
+        font-size: 2rem;
+    }
+
+    .contact-container .text h3{
         font-size: 1.5rem;
     }
+
+    .contact-container form  .email{
+        width:400px;
+        height: 60px;
+        padding: 20px 40px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+
+    }
+
+    .contact-container form .btn {
+        padding: 15px 30px;
+        border-radius: 20px;
+        font-size: 1.5rem;
+    }
+
+    /* footer section */
+    .tag-container .tag:nth-child(2), .tag-container .tag:nth-child(3), .tag-container .tag:nth-child(4), .tag-container .tag:nth-child(5){
+        display: none;
+    }
+
+    .tag-container .tag h2{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .tag-container .tag h3{
+        align-self: center;
+        font-size: 1.5rem;
+    }
+
+    .tag-container .tag .logo i{
+        font-size: 1.5rem;
+        margin: 10px 10px;
+    }  
 }
 
 @media (max-width:600px) {
-
+    /* navbar section */
     .navbar{
         padding: 30px 60px;
     }
@@ -1090,10 +953,16 @@ header{
         font-size: 2.5rem;
     }
 
+    /* cover image section */
+    .img-container .cover-text button{
+        padding:15px 30px;
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
 
+    /* coffee list section */
     .coffee-container{
-        /* margin:0 100px; */
-        padding: 30px 80px;
+        padding: 30px 20px;
         background-color: var(--text-color);
         color: black;
         border-radius: 20px;
@@ -1101,71 +970,6 @@ header{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-    
-    }
-
-    .tag-container .tag h3{
-        align-self: center;
-        font-size: 2rem;
-    }
-
-    .contact-container .form{
-        height:800px;
-        padding: 50px 0;
-        /* position: absolute;
-        top: 35%;
-        left: 25%; */
-    }
-
-    .contact-container .text h2{
-        font-size: 3rem;
-    }
-
-    .contact-container .text h3{
-        font-size: 1.8rem;
-    }
-
-    .contact-container form  .email{
-        width:400px;
-        height: 80px;
-        padding: 20px 40px;
-        margin-bottom: 20px;
-        font-size: 1.5rem;
-        
-    }
-
-    .contact-container form .btn {
-        padding: 15px 30px;
-        border-radius: 20px;
-        font-size: 1.8rem;
-    }
-
-    .coffeebean-container .text-group{
-        height:800px;
-        
-    }
-
-    .coffeebean-container .text-group h3{
-        font-size: 3rem;;
-    }
-
-
-    .coffeebean-container .text-group button{
-        padding: 15px 30px;
-        font-size: 2rem;
-        margin-top: 20px;
-
-    }
-
-
-
-    .coffeebean-container .text-group button i{
-        font-size: 1.5rem;
-    }
-
-    .coffee-container{
-        padding: 30px 20px;
-    
     }
 
     .coffee-container .card h5{
@@ -1176,14 +980,12 @@ header{
         font-size: 20px;
     }
 
-
     .coffee-container .card .row{
         margin: 20px 0;
     }
 
     .coffee-container .card .row span{
         font-size: 2rem;
-        /* color:white; */
     }
 
     .coffee-container .card input{
@@ -1191,6 +993,26 @@ header{
         font-size: 1.5rem;
     }
 
+    /* coffee bean section */
+    .coffeebean-container .text-group{
+        height:800px; 
+    }
+
+    .coffeebean-container .text-group h3{
+        font-size: 3rem;
+    }
+
+    .coffeebean-container .text-group button{
+        padding: 15px 30px;
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
+    .coffeebean-container .text-group button i{
+        font-size: 1.5rem;
+    }
+
+    /* review section */
     .review-container .box-container{
         margin-top: 50px;
         padding: 50px 20px;
@@ -1238,16 +1060,49 @@ header{
         font-size: 1rem;
     }
 
-    .img-container .cover-text button{
-        padding:15px 30px;
-        margin-top: 20px;
+    /* contact section */
+    .contact-container .form{
+        height:800px;
+        padding: 50px 0;
+    }
+
+    .contact-container .text h2{
+        font-size: 3rem;
+    }
+
+    .contact-container .text h3{
         font-size: 1.8rem;
     }
+
+    .contact-container form  .email{
+        width:400px;
+        height: 80px;
+        padding: 20px 40px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+    }
+
+    .contact-container form .btn {
+        padding: 15px 30px;
+        border-radius: 20px;
+        font-size: 1.8rem;
+    }
+
+    /* footer section */
+    .tag-container .tag h3{
+        align-self: center;
+        font-size: 2rem;
+    }
+    
 }
 
 @media (max-width:480px) {
+    /* navbar section */
+    .navbar{
+        padding: 40px 80px;
+    }
 
-
+    /* cover image section */
     .img-container .cover-text{
         height: 800px;
         padding-left: 8%;
@@ -1257,12 +1112,10 @@ header{
     .img-container .cover-text h2{
         font-size: 3rem;
         font-weight: 800;
-
     }
 
     .img-container .cover-text h3{
         font-size: 3.5rem;
-        
     }
 
     .img-container .cover-text button{
@@ -1271,108 +1124,26 @@ header{
         font-size: 2.5rem;
     }
 
-    .navbar{
-        padding: 40px 80px;
-    }
-
-    .tag-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        /* background-color: red; */
-    }
-
-    .tag-container .tag .logo i{
-        font-size: 2.5rem;
-        margin: 10px 30px;
-    }
-
-
-    .contact-container .form{
-        height:800px;
-        padding: 50px 0;
-        /* position: absolute;
-        top: 35%;
-        left: 25%; */
-    }
-
-    .contact-container .text h2{
-        font-size: 3rem;
-    }
-
-    .contact-container .text h3{
-        font-size: 2rem;
-        margin-bottom: 50px;
-    }
-
-
-    .contact-container form  .email{
-        width:500px;
-        height: 100px;
-        padding: 20px 40px;
-        font-size: 2rem;
-        
-    }
-
-    .contact-container form .btn {
-        padding: 25px 50px;
-        font-size: 2.5rem;
-    }
-
-    
-
-    .coffeebean-container .text-group h3{
-        font-size: 3.5rem;;
-    }
-
-
-    .coffeebean-container .text-group button{
-        padding: 20px 40px;
-        font-size: 2.5rem;
-        margin-top: 20px;
-    }
-
-
-
-    .coffeebean-container .text-group button i{
-        font-size: 2rem;
-    }
-    
-
-    .category .category-logo .icon {
-
-    }
-
+    /* category section */
     .category .category-logo .icon h4{
         font-size: 1.7rem;
     }
 
+    /* coffee list section */
     .coffee-container{
         padding: 50px 80px;
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center; */
-    
     }
-
 
     .coffee-container .title{
         margin-bottom: 50px;
     }
 
-
     .coffee-container .card{
-        padding: 50px;
-    }
-
-    .coffee-container .card:hover{
-        transform: translateY(-5%);
+        padding: 40px;
     }
 
     .coffee-container .card img{
-        height:800px;
+        height:700px;
     }
 
     .coffee-container .card-container{
@@ -1382,7 +1153,6 @@ header{
         padding: 0 50px;
     }
 
-
     .coffee-container .card h5{
         font-size: 3rem;
     }
@@ -1391,11 +1161,9 @@ header{
         font-size: 40px;
     }
 
-
     .coffee-container .card .row span{
         /* color: white; */
         font-size: 3rem;
-
     }
 
     .coffee-container .card input{
@@ -1411,6 +1179,22 @@ header{
         font-size: 3rem;
     }
 
+    /* coffee bean section */
+    .coffeebean-container .text-group h3{
+        font-size: 3.5rem;;
+    }
+
+    .coffeebean-container .text-group button{
+        padding: 20px 40px;
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+    .coffeebean-container .text-group button i{
+        font-size: 2rem;
+    }
+
+    /* review section */
     .review-container .box-container .box .heading .gp1 .text h3{
         font-size: 3rem;
     }
@@ -1449,5 +1233,47 @@ header{
     .review-container  .extra i{
         font-size: 1.5rem;
     }
+
+    /* contact section */
+    .contact-container .form{
+        height:800px;
+        padding: 50px 0;
+    }
+
+    .contact-container .text h2{
+        font-size: 3rem;
+    }
+
+    .contact-container .text h3{
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+    .contact-container form  .email{
+        width:500px;
+        height: 100px;
+        padding: 20px 40px;
+        font-size: 2rem;
+    }
+
+    .contact-container form .btn {
+        padding: 25px 50px;
+        font-size: 2.5rem;
+    }
+
+    /* footer section */
+    .tag-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+    }
+
+    .tag-container .tag .logo i{
+        font-size: 2.5rem;
+        margin: 10px 30px;
+    }
+    
 }
 /* Responsive Section End */

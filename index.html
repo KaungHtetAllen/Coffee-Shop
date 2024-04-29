@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
+    
     <!-- navbar start -->
     <header>
         <section class="container">
@@ -20,10 +21,10 @@
                 </div>
                 <ul class="tag">
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Coffee</a></li>
-                    <li><a href="#">Bakery</a></li>
-                    <li><a href="#">Contact</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="#hot-coffee">Coffee</a></li>
+                    <li><a href="#dessert">Bakery</a></li>
+                    <li><a href="#review">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                     <li><a href="#">Login</a></li>
                 </ul>
                 <div class="searchbar">
@@ -34,11 +35,9 @@
         </section>
     </header>
     <!-- navbar end -->
+
     <!-- cover image start -->
     <section class="img-container">
-        <!-- <div class="cover">
-            <img src="./image/cover.jpg" alt="">
-        </div> -->
         <div class="cover-text">
             <h2>Welcome!</h2>
             <h3>We serve the richest coffee in the city!</h3>
@@ -46,32 +45,36 @@
         </div>
     </section>
     <!-- cover image end -->
+
     <!-- category logo start -->
     <section class="category">
         <div class="logo-container">
             <div class="category-logo">
                 <div class="icon">
-                    <img src="./icons/5288416_cafe_coffee_cup_drink_glass_icon.png" alt="">
+                    <a href="#hot-coffee">
+                        <img src="./icons/5288416_cafe_coffee_cup_drink_glass_icon.png" alt="">
+                    </a>
                     <h4>Hot Coffee</h4>
                 </div>
                 <div class="icon">
-                    <img src="./icons/7830771_coffee_cold_icon.png" alt="">
+                    <a href="#ice-coffee">
+                        <img src="./icons/7830771_coffee_cold_icon.png" alt="">
+                    </a>
                     <h4>Cold Coffee</h4>
                 </div>
                 <div class="icon">
-                    <img src="./icons/4301505_americano_break_coffee_cup_relax_icon.png" alt="">
-                    <h4>Cup Coffee</h4>
-                </div>
-                <div class="icon">
-                    <img src="./icons/4301507_birdthday_cake_dessert_piece_cheese_icon.png" alt="">
+                    <a href="#dessert">
+                        <img src="./icons/4301507_birdthday_cake_dessert_piece_cheese_icon.png" alt="">
+                    </a>
                     <h4>Dessert</h4>
                 </div>
             </div>
         </div>
     </section>
     <!-- category logo end -->
+
     <!--hot coffee lists start -->
-    <section class="coffee-list">
+    <section class="coffee-list" id="hot-coffee">
         <div class="coffee-container">
             <div class="title">
                 <img src="./icons/5288416_cafe_coffee_cup_drink_glass_icon.png" width="35px">
@@ -81,51 +84,50 @@
                 <!-- hot coffee 1 -->
                 <div class="card">
                     <img src="./image/img1.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Hot Americano</h5>
+                    <p>Enjoy the bold richness of our classic hot Americano coffee.</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>3$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
                 <!-- hot coffee 2 -->
                 <div class="card">
                     <img src="./image/img2.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Hot Latte</h5>
+                    <p>Indulge in the creamy smoothness of our hot latte.</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>5$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
                 <!-- hot coffee 3 -->
                 <div class="card">
                     <img src="./image/img3.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Hot Espresso</h5>
+                    <p>Savor the intense aroma and flavor of our hot espresso.</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>5$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
                 <!-- hot coffee 4 -->
                 <div class="card">
                     <img src="./image/img4.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Hot Mocha</h5>
+                    <p>Experience blend of chocolate & espresso in hot mocha</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>8$</span>
                         <input type="button" value="Order Now">
                     </div>
-                </div>
-            
-                
+                </div>                
             </div>
         </div>
     </section>
-    <!--coffee lists end -->
+    <!--hot coffee lists end -->
+
     <!--cold coffee lists start -->
-    <section class="coffee-list">
+    <section class="coffee-list" id="ice-coffee">
         <div class="coffee-container">
             <div class="title">
                 <img src="./icons/7830771_coffee_cold_icon.png" alt="" width="35px">
@@ -135,105 +137,50 @@
                 <!-- cold coffee 1 -->
                 <div class="card">
                     <img src="./image/img5.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Iced Americano</h5>
+                    <p>Refresh yourself with our chilled iced Americano, bold and invigorating.</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>4$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
                 <!-- cold coffee 2 -->
                 <div class="card">
                     <img src="./image/img6.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Iced Latte</h5>
+                    <p>Cool down stress and pressure with our iced latte,creamy and sweety.</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>6$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
                 <!-- cold coffee 3 -->
                 <div class="card">
-                    <img src="./image/img7.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <img src="./image/img20.jpg" alt="">
+                    <h5>Iced Caramel</h5>
+                    <p>Quench your thirst with our iced caramel coffee, sweet, refreshing & satisfying.</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>7$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
                 <!-- cold coffee 4 -->
                 <div class="card">
                     <img src="./image/img8.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Iced Mocha</h5>
+                    <p>Treat yourself to our iced mocha, delightful blend of chocolate & espresso.</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>8$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
-            
-                
             </div>
         </div>
     </section>
     <!--cold lists end -->
-    <!--cup coffee lists start -->
-    <section class="coffee-list">
-        <div class="coffee-container">
-           <div class="title">
-            <img src="./icons/4301505_americano_break_coffee_cup_relax_icon.png" alt="" width="35px">
-            <h3>Our Special Cup Coffee</h3>
-           </div>
-            <div class="card-container">
-                <!-- cup coffee 1 -->
-                <div class="card">
-                    <img src="./image/img9.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                    <div class="row">
-                        <span>20$</span>
-                        <input type="button" value="Order Now">
-                    </div>
-                </div>
-                <!-- cup coffee 2 -->
-                <div class="card">
-                    <img src="./image/img10.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                    <div class="row">
-                        <span>20$</span>
-                        <input type="button" value="Order Now">
-                    </div>
-                </div>
-                <!-- cup coffee 3 -->
-                <div class="card">
-                    <img src="./image/img11.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                    <div class="row">
-                        <span>20$</span>
-                        <input type="button" value="Order Now">
-                    </div>
-                </div>
-                <!-- cup coffee 4 -->
-                <div class="card">
-                    <img src="./image/img12.jpg" alt="">
-                    <h5> Coffee</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
-                    <div class="row">
-                        <span>20$</span>
-                        <input type="button" value="Order Now">
-                    </div>
-                </div>
-            
-                
-            </div>
-        </div>
-    </section>
-    <!--cup lists end -->
+
     <!--deserts lists start -->
-    <section class="coffee-list">
+    <section class="coffee-list" id="dessert">
         <div class="coffee-container">
             <div class="title">
                 <img src="./icons/4301507_birdthday_cake_dessert_piece_cheese_icon.png" alt="" width="35px">
@@ -243,53 +190,51 @@
                 <!-- desserts 1 -->
                 <div class="card">
                     <img src="./image/img13.jpg" alt="">
-                    <h5> Dessert</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Strawberry Cake</h5>
+                    <p>Indulge in our delightful strawberry cake, bursting with fresh and fruity  flavor.</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>3$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
                 <!-- desserts 2 -->
                 <div class="card">
                     <img src="./image/img14.jpg" alt="">
-                    <h5> Dessert</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Chocolate Cake</h5>
+                    <p>Satisfy your sweet tooth with our decadent chocolate cake, rich, creamy & moist.</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>10$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
                 <!-- desserts 3 -->
                 <div class="card">
                     <img src="./image/img15.jpg" alt="">
-                    <h5> Dessert</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Choco Cup Cake</h5>
+                    <p>Enjoy our irresistible choco cupcake, a bite-sized delight perfect for any occasion</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>1$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
                 <!-- desserts 4 -->
                 <div class="card">
                     <img src="./image/img16.jpg" alt="">
-                    <h5> Dessert</h5>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing.</p>
+                    <h5> Lemon Cake</h5>
+                    <p>Brighten your day with our zesty lemon cake, a tangy and refreshing treat.</p>
                     <div class="row">
-                        <span>20$</span>
+                        <span>5$</span>
                         <input type="button" value="Order Now">
                     </div>
                 </div>
-            
-                
             </div>
         </div>
     </section>
     <!--desserts lists end -->
+
     <!-- coffee beans start -->
     <section class="coffee-bean">
         <div class="coffeebean-container">
-            <!-- <img src="./image/Coffee Beans Phone Wallpaper.jpg" alt=""> -->
             <div class="text-group">
                 <h3>Check out our best coffee beans</h3>
                 <button> <span>Explore our products</span> <i class="fa-solid fa-angles-right"></i></button>
@@ -297,17 +242,19 @@
         </div>
     </section>
     <!-- coffee beans end -->
+
     <!-- review start -->
-    <section class="review">
+    <section class="review" id="review">
         <div class="review-container">
             <h5>Come and Join</h5>
             <h4>Our Happy Customers</h4>
             <div class="box-container">
+                <!-- box 1 -->
                 <div class="box">
                     <div class="heading">
                         <div class="gp1">
                                 <div class="img">
-                                    <img src="./image/30 Must-Try Long Hairstyles for Men.jpg" alt="">
+                                    <img src="./image/img17.jpg" alt="">
                                 </div>
                                 <div class="text">
                                     <h3>Sam Williams</h3>
@@ -323,14 +270,15 @@
                         </div>
                     </div>
                     <div class="body">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus rerum iste consequuntur error animi aperiam accusantium, ut, optio, impedit ratione tempore temporibus. Natus, officiis soluta?</p>
+                        <p>As a self-proclaimed coffee connoisseur, I'm always on the hunt for the perfect brew. And let me tell you, I've found it here. The beans are expertly roasted, the flavors are balanced to perfection, and each cup is served with a smile. It's safe to say I'm hooked!</p>
                     </div>
                 </div>
+                <!-- box 2 -->
                 <div class="box">
                     <div class="heading">
                         <div class="gp1">
                                 <div class="img">
-                                    <img src="./image/30 Must-Try Long Hairstyles for Men.jpg" alt="">
+                                    <img src="./image/img18.jpg" alt="">
                                 </div>
                                 <div class="text">
                                     <h3>Sam Williams</h3>
@@ -342,18 +290,19 @@
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
                         </div>
                     </div>
                     <div class="body">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus rerum iste consequuntur error animi aperiam accusantium, ut, optio, impedit ratione tempore temporibus. Natus, officiis soluta?</p>
+                        <p>From the moment I walked in, I knew I had stumbled upon something special. The aroma of freshly brewed coffee filled the air, and with each sip, I was transported to a state of pure bliss. This place has become my go-to spot for a daily dose of caffeine and good vibes</p>
                     </div>
                 </div>
+                <!-- box 3 -->
                 <div class="box">
                     <div class="heading">
                         <div class="gp1">
                                 <div class="img">
-                                    <img src="./image/30 Must-Try Long Hairstyles for Men.jpg" alt="">
+                                    <img src="./image/img19.jpg" alt="">
                                 </div>
                                 <div class="text">
                                     <h3>Sam Williams</h3>
@@ -369,7 +318,7 @@
                         </div>
                     </div>
                     <div class="body">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus rerum iste consequuntur error animi aperiam accusantium, ut, optio, impedit ratione tempore temporibus. Natus, officiis soluta?</p>
+                        <p>I can't say enough good things about this coffee shop. The attention to detail in every cup is remarkable, and it's clear that the baristas are passionate about their craft. Whether I'm grabbing a quick latte to go or settling in for some work, this place never disappoints.</p>
                     </div>
                 </div>
             </div>
@@ -381,19 +330,16 @@
         </div>
     </section>
     <!-- review end -->
+
     <!-- contact start -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <div class="contact-container">
-            <!-- <div class="img">
-                <img src="./image/Download free image of Various coffee mugs on an abstract textured wallpaper by nook about coffee iphone wallpaper, instagram coffee, aesthetic, android wallpaper, and aromatic 2448252.jpg" alt="">
-            </div> -->
             <div class="form">
                 <div class="text">
                     <h2>Join in and get 15% Off!</h2>
                     <h3>Subscribe to our new member and get 15% off discount code</h3>
                 </div>
-                <form action="#">
-                    <!-- <i class="fa-solid fa-envelope"></i>  -->
+                <form action="#contact">
                     <input type="email" class="email" placeholder="Email Address...">
                     <button class="btn"><h5>Subscribe</h5></button>
                 </form>
@@ -401,6 +347,7 @@
         </div>
     </section>
     <!-- contact end -->
+
     <!-- footer start -->
     <section class="footer">
         <div class="footer-container">
@@ -448,7 +395,6 @@
                 </div>
             </div>
         </div>
-        
     </section>
     <!-- footer end -->
 
