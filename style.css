@@ -18,6 +18,7 @@
 body{
     background-color: var(--bg-color);
     color: var(--text-color);
+    min-width: 1200px;
     height:2000px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
@@ -26,7 +27,7 @@ body{
 
 header{
     width: 100%;
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 10;
 }
@@ -100,7 +101,7 @@ header{
 
 .navbar .tag li{
     list-style: none;
-    margin-right: 2rem;
+    margin: 1rem;
     font-size: 1rem;
     font-weight: 500;
     text-transform: uppercase;
@@ -154,13 +155,15 @@ header{
 /* Cover Image Section Start */
 
 .img-container{
-    background-color: red;
+    /* background-color: red; */
     position: relative;
-
-    
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
 }
 
-.img-container .cover{
+/* .img-container .cover{
     background-color: blue;
     width: 100%;
     display: flex;
@@ -174,13 +177,23 @@ header{
     height: 600px;
     opacity: 0.95;
     object-position: top;
-}
+} */
 
 
 .img-container .cover-text{
-    position: absolute;
-    top:200px;
-    left: 150px;
+    width: 100%;
+    height: 600px;
+    background: url(./image/cover.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 5%;
+    padding-top: 10%;
+    text-wrap: nowrap;
 }
 
 .img-container .cover-text h2{
@@ -203,6 +216,7 @@ header{
     padding:12px 24px;
     background-color: var(--main-color);
     color: var(--text-color);
+    font-size: 1.3rem;
     font-weight: 500;
     border-radius: 20px;
     border: none;
@@ -221,21 +235,24 @@ header{
 
 /* category logo section start */
 
-.category{
+.logo-container{
+    margin: 0 100px;
+    padding: 40px;
     background-color:var(--bg-color);
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .category .category-logo {
+    width: 100%;
+    /* background-color: red; */
     display:flex;
-    justify-content:center;
+    justify-content:space-evenly;
     align-items:center;
 }
 
-.category .category-logo .icon{
-    margin:50px 100px;
 
-}
 
 
 .category .category-logo img{
@@ -247,13 +264,16 @@ header{
     transition: 0.5s;
 }
 
-.category .category-logo img:hover{
-    transform: translateY(-10%);
-}
+
 
 .category .category-logo .icon h4{
     color: var(--main-color);
     text-align: center;
+    font-weight: bold;
+}
+
+.category .category-logo img:hover{
+    transform: translateY(-10%);
 }
 
 /* category logo section end */
@@ -269,6 +289,10 @@ header{
     background-color: var(--text-color);
     color: black;
     border-radius: 20px;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
     
 }
 
@@ -283,6 +307,7 @@ header{
     text-align: center;
     font-size: 1.5rem;
     text-transform: uppercase;
+    text-wrap: nowrap;
 }
 
 .coffee-container .card-container{
@@ -297,7 +322,7 @@ header{
     background-color: var(--bg-color);
     padding: 20px 20px;
     width:100%;
-    height: 430px;
+    min-height: 430px;
     border-radius: 10px;
     position: relative;
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
@@ -311,7 +336,7 @@ header{
 
 .coffee-container .card img{
     width:100%;
-    height:250px;
+    height: 300px;
     border-radius: 10px;
 }
 
@@ -365,26 +390,34 @@ header{
 
 .coffeebean-container{
     margin: 0 100px;
-    height:300px;
-    position: relative;
+    /* height:300px; */
+    /* position: relative; */
 }
 
-.coffeebean-container img{
+/* .coffeebean-container img{
     width:100%;
     height:100%;
     object-position: center;
     object-fit: cover;
-}
+} */
 
 
 .coffeebean-container .text-group{
+    width: 100%;
+    min-height:350px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    background: url(./image/Coffee\ Beans\ Phone\ Wallpaper.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    padding-bottom: 50px 0;
+    text-wrap: nowrap;
+    /* position: absolute;
     top:50%;
-    left:33%
+    left:33% */
 }
 
 .coffeebean-container .text-group h3{
@@ -403,15 +436,17 @@ header{
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
     cursor: pointer;
     transition: 0.5s;
+    font-size: 1.3rem;
+}
+
+
+
+.coffeebean-container .text-group button i{
+    font-size: 1rem;
 }
 
 .coffeebean-container .text-group button:hover{
     transform: scale(1.2);
-}
-
-.coffeebean-container .text-group button i{
-    font-size: 0.5rem;
-    margin-left: 3px;
 }
 
 
@@ -419,12 +454,16 @@ header{
 
 /* Review Section Start */
 
+
 .review-container{
     background: white;
     margin: 20px 100px;
     color: black;
     padding: 40px 80px;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .review-container h5{
@@ -440,11 +479,11 @@ header{
 }
 
 .review-container .box-container{
-    margin-top: 50px;
-    padding: 50px 75px;
+    margin-top: 25px;
+    padding: 50px 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(180px,auto));
-    gap: 25px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));;
+    gap: 30px;
 }
 
 .review-container .box-container .box{
@@ -456,6 +495,7 @@ header{
     cursor: pointer;
     transition: 0.5s;
     border-radius:10px;
+    /* max-width: 500px; */
 }
 
 .review-container .box-container .box:hover{
@@ -544,12 +584,12 @@ header{
 /* Contact Section Start */
 
 .contact-container{
-    background-color: red;
+    /* background-color: red; */
     margin: 20px 100px;
-    position: relative;
+    /* position: relative; */
 }
 
-.contact-container .img{
+/* .contact-container .img{
     width:100%;
     height:350px;
 }
@@ -561,12 +601,24 @@ header{
     object-position: center;
     
     filter: brightness(0.8);
-}
+} */
 
 .contact-container .form{
-    position: absolute;
+    background: url(./image/Download\ free\ image\ of\ Various\ coffee\ mugs\ on\ an\ abstract\ textured\ wallpaper\ by\ nook\ about\ coffee\ iphone\ wallpaper\,\ instagram\ coffee\,\ aesthetic\,\ android\ wallpaper\,\ and\ aromatic\ 2448252.jpg);
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    width:100%;
+    min-height:300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 0;
+    text-wrap: nowrap;
+    /* position: absolute;
     top: 35%;
-    left: 25%;
+    left: 25%; */
 }
 
 .contact-container .text{
@@ -577,13 +629,13 @@ header{
 }
 
 .contact-container .text h2{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 800;
     margin-bottom: 5px;
 }
 
 .contact-container .text h3{
-    font-size: 0.8rem;
+    font-size: 1rem;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -597,11 +649,11 @@ header{
 }
 
 .contact-container form  .email{
-    width:50%;
+    width:70%;
     height: 30px;
     padding: 20px 40px;
     border-radius: 20px;
-    margin-right: 15px;
+    margin-right: 10px;
     border: none;
 }
 
@@ -614,6 +666,8 @@ header{
     box-shadow: 3px 3px 5px rgba(0,0,0,0.3);
     cursor: pointer;
     transition: 0.5s;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 
 .contact-container form .btn:hover {
@@ -634,8 +688,16 @@ header{
 /* Footer Section Start */
 
 .footer-container{
-    background-color: var(--main-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin: 0 100px;
+
+}
+
+.tag-container{
+    width: 100%;
+    background-color: var(--main-color);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -643,37 +705,743 @@ header{
     padding: 40px 80px;
 }
 
-.footer-container .tag{
+.tag-container .tag{
     display: flex;
     flex-direction: column;
     gap: 10px;
     align-items: start;
 }
 
-.footer-container .tag h2{
+.tag-container .tag h2{
     font-weight: 500;
     font-size: 2rem;
     text-transform: uppercase;
 }
 
-.footer-container .tag h3{
+.tag-container .tag h3{
     font-size: 1.2rem;
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.footer-container .tag h4{
+.tag-container .tag h4{
     font-weight: 300;
     font-size: 1rem;
 }
 
-.footer-container .tag .logo{
+.tag-container .tag .logo{
 
 }
 
-.footer-container .tag .logo i{
+.tag-container .tag .logo i{
     font-size: 1.2rem;
     margin-right: 15px;
 }
 
 /* Footer Section End */
+
+
+/* Responsive Section Start */
+
+@media (max-width:1080px) {
+    
+    .navbar .tag li{
+        font-size: 1.3rem;
+    }
+
+    .img-container .cover-text{
+        height: 700px;
+        
+        padding-left: 5%;
+        padding-top: 10%;
+    }
+
+    .tag-container .tag h2{
+        font-size: 1.5rem;
+    }
+
+    .tag-container .tag h3{
+        font-size: 1.2rem;
+    }
+
+    .tag-container .tag .logo i{
+        font-size: 1rem;
+        margin-right: 15px;
+    }
+
+    .tag-container{
+        padding:  20px;
+    }
+
+    /* .contact-container form .btn {
+        padding: 10px 20px;
+        border-radius: 20px;
+        font-size: 1rem;
+    } */
+
+    .contact-container .form{
+        height: 400px;
+    }
+
+    .contact-container .text h2{
+        font-size: 1.8rem;
+    }
+
+    .contact-container .text h3{
+        font-size: 1rem;
+    }
+
+    .contact-container form  .email{
+        width:400px;
+        height: 50px;
+        padding: 15px 30px;
+        font-size: 1rem;
+        
+    }
+
+    .contact-container form .btn {
+        padding: 15px 30px;
+        border-radius: 20px;
+        font-size: 1.3rem;
+    }
+
+    .category .category-logo .icon h4{
+        font-size: 1.3rem;
+    }
+
+    .coffee-container{
+        /* margin:0 100px; */
+        padding: 30px 40px;
+        /* background-color: var(--text-color);
+        color: black;
+        border-radius: 20px; */
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+    
+    }
+
+    .coffee-container .card-container{
+        display: grid;
+        grid-template-columns:auto auto auto;
+        gap: 2rem;
+        margin:50px;
+
+    }
+
+    .coffee-container .card{
+        padding: 20px 20px;
+        width:100%;
+    }
+
+    .coffee-container .card:hover{
+        transform: translateY(-5%);
+    }
+
+    .coffee-container .card img{
+        width:100%;
+        height:250px;
+    }
+
+
+    .coffee-container .card h5{
+        font-size: 1.5rem;
+    }
+
+    .coffee-container .card p{
+        font-size: 15px;
+    }
+
+    /* .coffee-container .card .row{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px;
+    } */
+
+    .coffee-container .card span{
+        font-size: 1.3rem;
+    }
+
+    /* .coffee-container .card .row span i{
+        margin-right: 5px;
+    } */
+
+    .coffee-container .card input{
+        padding: 8px 16px;
+        font-size: 1rem;
+    }
+    
+}
+
+@media (max-width:786px) {
+    /* .navbar .tag li{
+        font-size: 1.3rem;
+    } */
+
+    .tag-container .tag:nth-child(2), .tag-container .tag:nth-child(3), .tag-container .tag:nth-child(4), .tag-container .tag:nth-child(5){
+        display: none;
+    }
+
+    .tag-container .tag h2{
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 10px;
+    }
+
+    .tag-container .tag h3{
+        align-self: center;
+        font-size: 1.5rem;
+    }
+
+    .tag-container .tag .logo{
+        /* background-color: red; */
+    }
+
+    .tag-container .tag .logo i{
+        font-size: 1.5rem;
+        margin: 10px 10px;
+    }
+
+
+    .contact-container .text h2{
+        font-size: 1.8rem;
+    }
+    .contact-container .text h3{
+        font-size: 1rem;
+    }
+
+
+    .contact-container form {
+        /* background-color: yellow; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* height:800px;
+        padding: 50px 0; */
+    }
+
+
+
+    .contact-container .text h2{
+        font-size: 2rem;
+    }
+
+    .contact-container .text h3{
+        font-size: 1.5rem;
+    }
+
+    .contact-container form  .email{
+        width:400px;
+        height: 60px;
+        padding: 20px 40px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        
+    }
+
+    .contact-container form .btn {
+        padding: 15px 30px;
+        border-radius: 20px;
+        font-size: 1.5rem;
+    }
+    /* .contact-container form  .email{
+        width:300px;
+        height: 50px;
+        padding: 20px 40px;
+        margin-bottom: 20px;
+        font-size: 1rem;
+        
+    }
+
+    .contact-container form .btn {
+        padding: 15px 30px;
+        border-radius: 20px;
+        font-size: 1rem;
+    } */
+
+    .coffeebean-container .text-group{
+        min-height:500px;
+    }
+
+    .category .category-logo img{
+        width: 100px;
+        height:100px;
+    }
+
+
+
+    .category .category-logo .icon h4{
+        font-size: 1.5rem;
+    }
+    
+    .coffee-container .card-container{
+        grid-template-columns: auto auto;
+        gap: 5rem;
+        margin:50px;
+        padding: 0 50px;
+    }
+
+
+    .coffee-container .card h5{
+        font-size: 1.8rem;
+    }
+
+    .coffee-container .card p{
+        font-size: 20px;
+    }
+
+
+    .coffee-container .card span{
+        font-size: 1.5rem;
+    }
+
+    .coffee-container .card input{
+        padding: 8px 16px;
+        font-size: 1.2rem;
+    }
+    
+    .coffee-container .title img{
+        width:50px;
+    }
+
+    .coffee-container h3{
+        font-size: 2rem;
+    }
+
+     .coffeebean-container .text-group h3{ 
+        font-size: 3rem;
+        margin-bottom: 20px;
+    }
+
+
+    .coffeebean-container .text-group button{
+        padding: 20px 40px;
+        font-size: 1.5rem;
+    } 
+
+
+
+    .coffeebean-container .text-group button i{
+        font-size: 1rem;
+    } 
+    
+
+    .review-container .box-container .box .heading .gp1 .text h3{
+        font-size: 1.3rem;
+    }
+
+    .review-container .box-container .box .heading .gp1 .text h4{
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .review-container .box-container .box .heading .gp2{
+        margin-top: 10px;
+    }
+
+    .review-container .box-container .box .heading .gp2 i{
+        color: orange;
+        font-size: 1rem;
+    }
+
+    .img-container .cover-text button{
+        padding:15px 30px;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:600px) {
+
+    .navbar{
+        padding: 30px 60px;
+    }
+
+    .navbar .logo h2{
+        font-size: 3rem;
+    }
+
+    .navbar .logo i{
+        font-size: 3rem;
+    }
+
+    .navbar .tag{
+        display: none;
+    }
+
+    .navbar .searchbar{
+        padding: 10px 20px;
+    }
+
+    .navbar .searchbar input{
+        width: 300px;
+        font-size: 2rem;
+    }
+
+    .navbar .searchbar .btn{
+        font-size: 2.5rem;
+    }
+
+
+    .coffee-container{
+        /* margin:0 100px; */
+        padding: 30px 80px;
+        background-color: var(--text-color);
+        color: black;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    
+    }
+
+    .tag-container .tag h3{
+        align-self: center;
+        font-size: 2rem;
+    }
+
+    .contact-container .form{
+        height:800px;
+        padding: 50px 0;
+        /* position: absolute;
+        top: 35%;
+        left: 25%; */
+    }
+
+    .contact-container .text h2{
+        font-size: 3rem;
+    }
+
+    .contact-container .text h3{
+        font-size: 1.8rem;
+    }
+
+    .contact-container form  .email{
+        width:400px;
+        height: 80px;
+        padding: 20px 40px;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+        
+    }
+
+    .contact-container form .btn {
+        padding: 15px 30px;
+        border-radius: 20px;
+        font-size: 1.8rem;
+    }
+
+    .coffeebean-container .text-group{
+        height:800px;
+        
+    }
+
+    .coffeebean-container .text-group h3{
+        font-size: 3rem;;
+    }
+
+
+    .coffeebean-container .text-group button{
+        padding: 15px 30px;
+        font-size: 2rem;
+        margin-top: 20px;
+
+    }
+
+
+
+    .coffeebean-container .text-group button i{
+        font-size: 1.5rem;
+    }
+
+    .coffee-container{
+        padding: 30px 20px;
+    
+    }
+
+    .coffee-container .card h5{
+        font-size: 2rem;
+    }
+
+    .coffee-container .card p{
+        font-size: 20px;
+    }
+
+
+    .coffee-container .card .row{
+        margin: 20px 0;
+    }
+
+    .coffee-container .card .row span{
+        font-size: 2rem;
+        /* color:white; */
+    }
+
+    .coffee-container .card input{
+        padding: 8px 16px;
+        font-size: 1.5rem;
+    }
+
+    .review-container .box-container{
+        margin-top: 50px;
+        padding: 50px 20px;
+        display: grid;
+        grid-template-columns: auto;
+        gap: 30px;
+    }
+
+    .review-container .box-container .box .heading .gp1 .text h3{
+        font-size: 1.5rem;
+    }
+
+    .review-container .box-container .box .heading .gp1 .text h4{
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .review-container .box-container .box .heading .gp2{
+        margin-top: 10px;
+    }
+
+    .review-container .box-container .box .heading .gp2 i{
+        color: orange;
+        font-size: 1.3rem;
+    }
+
+    .review-container .box-container .box .body p{
+        font-size: 1.3rem;
+    }
+
+    .review-container .box-container .box .heading .gp1  .img{
+        width:100px;
+        height: 100px;
+    }
+
+    .review-container h5{
+        font-size: 1.5rem;
+    }
+
+    .review-container h4{
+        font-size: 2.5rem;
+    }
+
+    .review-container  .extra i{
+        font-size: 1rem;
+    }
+
+    .img-container .cover-text button{
+        padding:15px 30px;
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width:480px) {
+
+
+    .img-container .cover-text{
+        height: 800px;
+        padding-left: 8%;
+        padding-top: 10%;
+    }
+
+    .img-container .cover-text h2{
+        font-size: 3rem;
+        font-weight: 800;
+
+    }
+
+    .img-container .cover-text h3{
+        font-size: 3.5rem;
+        
+    }
+
+    .img-container .cover-text button{
+        padding:15px 30px;
+        margin-top: 50px;
+        font-size: 2.5rem;
+    }
+
+    .navbar{
+        padding: 40px 80px;
+    }
+
+    .tag-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* background-color: red; */
+    }
+
+    .tag-container .tag .logo i{
+        font-size: 2.5rem;
+        margin: 10px 30px;
+    }
+
+
+    .contact-container .form{
+        height:800px;
+        padding: 50px 0;
+        /* position: absolute;
+        top: 35%;
+        left: 25%; */
+    }
+
+    .contact-container .text h2{
+        font-size: 3rem;
+    }
+
+    .contact-container .text h3{
+        font-size: 2rem;
+        margin-bottom: 50px;
+    }
+
+
+    .contact-container form  .email{
+        width:500px;
+        height: 100px;
+        padding: 20px 40px;
+        font-size: 2rem;
+        
+    }
+
+    .contact-container form .btn {
+        padding: 25px 50px;
+        font-size: 2.5rem;
+    }
+
+    
+
+    .coffeebean-container .text-group h3{
+        font-size: 3.5rem;;
+    }
+
+
+    .coffeebean-container .text-group button{
+        padding: 20px 40px;
+        font-size: 2.5rem;
+        margin-top: 20px;
+    }
+
+
+
+    .coffeebean-container .text-group button i{
+        font-size: 2rem;
+    }
+    
+
+    .category .category-logo .icon {
+
+    }
+
+    .category .category-logo .icon h4{
+        font-size: 1.7rem;
+    }
+
+    .coffee-container{
+        padding: 50px 80px;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; */
+    
+    }
+
+    .coffee-container .title{
+        margin-bottom: 50px;
+    }
+
+
+    .coffee-container .card{
+        padding: 40px;
+    }
+
+    .coffee-container .card:hover{
+        transform: translateY(-5%);
+    }
+
+    .coffee-container .card img{
+        height:700px;
+    }
+
+    .coffee-container .card-container{
+        grid-template-columns: auto;
+        gap: 5rem;
+        margin:50px;
+        padding: 0 50px;
+    }
+
+
+    .coffee-container .card h5{
+        font-size: 3rem;
+    }
+
+    .coffee-container .card p{
+        font-size: 40px;
+    }
+
+
+    .coffee-container .card .row span{
+        /* color: white; */
+        font-size: 3rem;
+
+    }
+
+    .coffee-container .card input{
+        padding: 10px 20px;
+        font-size: 3rem;
+    }
+    
+    .coffee-container .title img{
+        width:75px;
+    }
+
+    .coffee-container h3{
+        font-size: 3rem;
+    }
+
+    .review-container .box-container .box .heading .gp1 .text h3{
+        font-size: 3rem;
+    }
+
+    .review-container .box-container .box .heading .gp1 .text h4{
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .review-container .box-container .box .heading .gp2{
+        margin-top: 10px;
+    }
+
+    .review-container .box-container .box .heading .gp2 i{
+        color: orange;
+        font-size: 2rem;
+    }
+
+    .review-container .box-container .box .body p{
+        font-size: 2rem;
+    }
+
+    .review-container .box-container .box .heading .gp1  .img{
+        width:150px;
+        height: 150px;
+    }
+
+    .review-container h5{
+        font-size: 2.5rem;
+    }
+
+    .review-container h4{
+        font-size: 3rem;
+    }
+
+    .review-container  .extra i{
+        font-size: 1.5rem;
+    }
+}
+/* Responsive Section End */
